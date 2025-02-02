@@ -8,6 +8,7 @@ library AddressUtils {
      * @return True if the address is a contract, false otherwise.
      */
     function isContract(address addr) internal view returns (bool) {
+        if (addr == address(0)) return false; // Prevents false positives
         uint256 size;
         assembly {
             size := extcodesize(addr)
@@ -20,6 +21,6 @@ library AddressUtils {
      * @param addr The address to check.
      */
     function requireNonZero(address addr) internal pure {
-        require(addr != address(0), "Address cannot be zero");
+        require(addr != address(0), "Invalid address: zero address");
     }
 }

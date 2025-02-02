@@ -17,9 +17,12 @@ library TokenUtils {
         address to,
         uint256 amount
     ) internal {
-        bool success = IERC20(token).transferFrom(from, to, amount);
-        require(success, "Token transfer failed");
+        (bool success, bytes memory data) = token.call(
+            abi.encodeWithSelector(IERC20.transferFrom.selector, from, to, amount)
+        );
+        require(success && (data.length == 0 || abi.decode(data, (bool))), "Token transfer failed");
     }
+
 
     /**
      * @dev Approves tokens for spending by a spender.
@@ -32,7 +35,9 @@ library TokenUtils {
         address spender,
         uint256 amount
     ) internal {
-        bool success = IERC20(token).approve(spender, amount);
-        require(success, "Token approval failed");
+        (bool success, bytes memory data) = token.call(
+        abi.encodeWithSelector(IERC20.approve.selector, spender, amount)
+    );
+    require(success && (data.length == 0 || abi.decode(data, (bool))), "Token approval failed");
     }
 }

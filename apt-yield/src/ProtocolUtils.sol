@@ -11,10 +11,13 @@ library ProtocolUtils {
      * @param amount The amount of tokens to deposit.
      */
     function deposit(address token, address protocol, uint256 amount) internal {
+        require(token != address(0) && protocol != address(0), "Invalid address");
         IERC20(token).approve(protocol, amount);
-        // Call the protocol's deposit function (example for Aave)
-        (bool success, ) = protocol.call(abi.encodeWithSignature("deposit(address,uint256)", token, amount));
-        require(success, "Deposit failed");
+
+        (bool success, bytes memory data) = protocol.call(
+            abi.encodeWithSignature("deposit(address,uint256)", token, amount)
+        );
+        require(success && (data.length == 0 || abi.decode(data, (bool))), "Deposit failed");
     }
 
     /**
@@ -24,8 +27,11 @@ library ProtocolUtils {
      * @param amount The amount of tokens to withdraw.
      */
     function withdraw(address token, address protocol, uint256 amount) internal {
-        // Call the protocol's withdraw function (example for Aave)
-        (bool success, ) = protocol.call(abi.encodeWithSignature("withdraw(address,uint256)", token, amount));
-        require(success, "Withdrawal failed");
+        require(token != address(0) && protocol != address(0), "Invalid address");
+
+        (bool success, bytes memory data) = protocol.call(
+            abi.encodeWithSignature("withdraw(address,uint256)", token, amount)
+        );
+        require(success && (data.length == 0 || abi.decode(data, (bool))), "Withdrawal failed");
     }
 }

@@ -36,7 +36,8 @@
 # Libraries & Remappings
 remappings = [
   "@openzeppelin/contracts=lib/openzeppelin-contracts/contracts",
-  "@warden/=lib/warden-agent-kit/"
+  "@warden/=lib/warden-agent-kit/",
+  "@forge-std/=lib/forge-std/"
 ]
 
 # Fuzz Testing & Invariant Testing
