@@ -42,7 +42,7 @@ export class Agent {
             console.log('\n--- Processing New Request ---');
             
             // Parse email request
-            const request = EmailParser.parseRequest(email);
+            const request = await EmailParser.parseRequest(email);
             console.log('From:', request.from);
             console.log('Subject:', request.subject);
             console.log('Amount:', request.amount ? `$${request.amount}` : 'No amount specified');
