@@ -19,7 +19,7 @@ export class EmailParser {
         const body = email.body || '';
         let amount = this.parseAmount(body);
 
-        // New: Check PDFs if no amount in body
+        // If no amount found in body, check PDFs
         if (!amount && email.attachments) {
             for (const attachment of email.attachments) {
                 if (attachment.filename.toLowerCase().endsWith('.pdf')) {
