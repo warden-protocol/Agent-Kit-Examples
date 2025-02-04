@@ -56,19 +56,44 @@ export class EmailService {
                 userId: this.userId,
                 id: message.id
             });
-            fullMessages.push(this.parseMessage(fullMessage.data));
+            fullMessages.push(await this.parseMessage(fullMessage.data));
         }
 
         return fullMessages;
     }
 
-    private parseMessage(message: any) {
+    private async getAttachments(message: any): Promise<{data: Buffer, filename: string}[]> {
+        const attachments: {data: Buffer, filename: string}[] = [];
+        
+        const parts = message.payload.parts || [];
+        for (const part of parts) {
+            if (part.filename && part.filename.toLowerCase().endsWith('.pdf')) {
+                const attachment = await this.gmail.users.messages.attachments.get({
+                    userId: this.userId,
+                    messageId: message.id,
+                    id: part.body.attachmentId
+                });
+
+                attachments.push({
+                    data: Buffer.from(attachment.data.data, 'base64'),
+                    filename: part.filename
+                });
+            }
+        }
+
+        return attachments;
+    }
+
+    private async parseMessage(message: any) {
         const headers = message.payload.headers;
+        const attachments = await this.getAttachments(message);
+        
         return {
             id: message.id,
             from: headers.find((h: any) => h.name === 'From')?.value,
             subject: headers.find((h: any) => h.name === 'Subject')?.value,
-            body: this.getMessageBody(message.payload)
+            body: this.getMessageBody(message.payload),
+            attachments
         };
     }
 
