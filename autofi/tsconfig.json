@@ -15,5 +15,5 @@
         "noImplicitAny": false,
         "removeComments": false
     },
-    "include": ["*.ts"]
+    "include": ["*.ts", "autofi.ts", "src/pricePrediction.ts"]
 }
