@@ -20,6 +20,7 @@
         "@wardenprotocol/warden-agent-kit-core": "^0.0.24",
         "@wardenprotocol/warden-langchain": "^0.0.8",
         "dotenv": "^16.4.5",
+        "ethers": "^6.13.5",
         "simple-linear-regression": "^1.0.3",
         "zod": "^3.22.4"
     },
