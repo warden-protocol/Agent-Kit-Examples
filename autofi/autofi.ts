@@ -1,6 +1,6 @@
 import { getTokenPrice } from './src/getTokenPrice';
 import { predictFuturePrice } from './src/pricePrediction';
-import { calculateAPR } from './src/aprCalculator';
+// import { calculateAPR } from './src/aprCalculator';
 
 
 async function main() {
@@ -13,10 +13,6 @@ async function main() {
     // Predict the future price
     const predictedPrice = await predictFuturePrice(tokenSymbol);
     console.log(`Predicted price of ${tokenSymbol} in 1 hour: $${predictedPrice}`);
-
-    // Calculate the APR
-    const apr = calculateAPR(tokenSymbol);
-    console.log(`APR for ${tokenSymbol}: ${apr.toFixed(2)}%`);
     
 }
 

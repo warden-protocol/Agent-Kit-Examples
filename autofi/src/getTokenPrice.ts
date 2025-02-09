@@ -42,10 +42,10 @@ export async function getTokenPrice(tokenSymbol: string): Promise<number> {
             throw new Error('get_price tool not found');
         }
 
-        console.log(`Fetching price for token: ${tokenSymbol}...`);
+        console.log(`\nFetching price for token: ${tokenSymbol}...`);
         const response = await getPriceTool.call({ symbol: tokenSymbol });
 
-        console.log('\nResponse from Warden:');
+        console.log('Response from Warden:');
         console.log(response);
 
         // The response will be a string like "Current price of ETH: $2000.00"
