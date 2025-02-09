@@ -1,0 +1,44 @@
+import { RunnableConfig } from "@langchain/core/runnables";
+import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import { All, BaseCheckpointSaver, Checkpoint, ReadonlyCheckpoint, type PendingWrite, type PendingWriteValue, BaseStore, CheckpointPendingWrite } from "@langchain/langgraph-checkpoint";
+import { BaseChannel } from "../channels/base.js";
+import { PregelNode } from "./read.js";
+import { PregelExecutableTask, PregelTaskDescription, SimpleTaskPath, TaskPath } from "./types.js";
+import { ManagedValueMapping } from "../managed/base.js";
+import { IterableReadableWritableStream } from "./stream.js";
+/**
+ * Construct a type with a set of properties K of type T
+ */
+export type StrRecord<K extends string, T> = {
+    [P in K]: T;
+};
+export type WritesProtocol<C = string> = {
+    name: string;
+    writes: PendingWrite<C>[];
+    triggers: string[];
+    path?: TaskPath;
+};
+export declare const increment: (current?: number) => number;
+export declare function shouldInterrupt<N extends PropertyKey, C extends PropertyKey>(checkpoint: Checkpoint, interruptNodes: All | N[], tasks: PregelExecutableTask<N, C>[]): boolean;
+export declare function _localRead<Cc extends Record<string, BaseChannel>>(step: number, checkpoint: ReadonlyCheckpoint, channels: Cc, managed: ManagedValueMapping, task: WritesProtocol<keyof Cc>, select: Array<keyof Cc> | keyof Cc, fresh?: boolean): Record<string, unknown> | unknown;
+export declare function _localWrite(step: number, commit: (writes: [string, any][]) => any, processes: Record<string, PregelNode>, managed: ManagedValueMapping, writes: [string, any][]): void;
+export declare function _applyWrites<Cc extends Record<string, BaseChannel>>(checkpoint: Checkpoint, channels: Cc, tasks: WritesProtocol<keyof Cc>[], getNextVersion?: (version: any, channel: BaseChannel) => any): Record<string, PendingWriteValue[]>;
+export type NextTaskExtraFields = {
+    step: number;
+    isResuming?: boolean;
+    checkpointer?: BaseCheckpointSaver;
+    manager?: CallbackManagerForChainRun;
+    store?: BaseStore;
+    stream?: IterableReadableWritableStream;
+};
+export type NextTaskExtraFieldsWithStore = NextTaskExtraFields & {
+    store?: BaseStore;
+};
+export type NextTaskExtraFieldsWithoutStore = NextTaskExtraFields & {
+    store?: never;
+};
+export declare function _prepareNextTasks<Nn extends StrRecord<string, PregelNode>, Cc extends StrRecord<string, BaseChannel>>(checkpoint: ReadonlyCheckpoint, pendingWrites: [string, string, unknown][] | undefined, processes: Nn, channels: Cc, managed: ManagedValueMapping, config: RunnableConfig, forExecution: false, extra: NextTaskExtraFieldsWithoutStore): Record<string, PregelTaskDescription>;
+export declare function _prepareNextTasks<Nn extends StrRecord<string, PregelNode>, Cc extends StrRecord<string, BaseChannel>>(checkpoint: ReadonlyCheckpoint, pendingWrites: [string, string, unknown][] | undefined, processes: Nn, channels: Cc, managed: ManagedValueMapping, config: RunnableConfig, forExecution: true, extra: NextTaskExtraFieldsWithStore): Record<string, PregelExecutableTask<keyof Nn, keyof Cc>>;
+export declare function _prepareSingleTask<Nn extends StrRecord<string, PregelNode>, Cc extends StrRecord<string, BaseChannel>>(taskPath: SimpleTaskPath, checkpoint: ReadonlyCheckpoint, pendingWrites: CheckpointPendingWrite[] | undefined, processes: Nn, channels: Cc, managed: ManagedValueMapping, config: RunnableConfig, forExecution: false, extra: NextTaskExtraFields): PregelTaskDescription | undefined;
+export declare function _prepareSingleTask<Nn extends StrRecord<string, PregelNode>, Cc extends StrRecord<string, BaseChannel>>(taskPath: TaskPath, checkpoint: ReadonlyCheckpoint, pendingWrites: CheckpointPendingWrite[] | undefined, processes: Nn, channels: Cc, managed: ManagedValueMapping, config: RunnableConfig, forExecution: true, extra: NextTaskExtraFields): PregelExecutableTask<keyof Nn, keyof Cc> | undefined;
+export declare function _prepareSingleTask<Nn extends StrRecord<string, PregelNode>, Cc extends StrRecord<string, BaseChannel>>(taskPath: TaskPath, checkpoint: ReadonlyCheckpoint, pendingWrites: CheckpointPendingWrite[] | undefined, processes: Nn, channels: Cc, managed: ManagedValueMapping, config: RunnableConfig, forExecution: boolean, extra: NextTaskExtraFieldsWithStore): PregelTaskDescription | PregelExecutableTask<keyof Nn, keyof Cc> | undefined;

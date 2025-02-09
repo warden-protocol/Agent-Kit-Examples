@@ -1,0 +1,866 @@
+[2025-02-03T20:22:55.506Z] ERROR: WardenAgent Initialization Failed - Invalid PRIVATE_KEY! It must be 64 hex characters and start with 0x.
+Error: Invalid PRIVATE_KEY! It must be 64 hex characters and start with 0x.
+    at file:///home/jim/IdeaProjects/warden-gas-forecaster/src/wardenAgent.js:8:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+[2025-02-04 00:48:41] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'invoke')
+TypeError: Cannot read properties of undefined (reading 'invoke')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:5:48)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:28:36)
+    at main (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:6:5)
+    at file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+[2025-02-06 02:00:09] ERROR: Failed to fetch gas price - gasPrice is not defined
+ReferenceError: gasPrice is not defined
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:9:39)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:28:36)
+    at main (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:6:5)
+    at file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+[2025-02-06 02:01:19] ERROR: Failed to fetch gas price - gasPrice is not defined
+ReferenceError: gasPrice is not defined
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:9:9)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:28:36)
+    at main (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:6:5)
+    at file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+[2025-02-06 02:03:21] ERROR: Failed to fetch gas price - gasPrice is not defined
+ReferenceError: gasPrice is not defined
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:9:9)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:31:36)
+    at main (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:6:5)
+    at file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+[2025-02-06 02:22:00] ERROR: Failed to fetch gas price - gasPrice is not defined
+ReferenceError: gasPrice is not defined
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:9:9)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:32:36)
+    at main (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:6:5)
+    at file:///home/jim/IdeaProjects/warden-gas-forecaster/src/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:337:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+[2025-02-06 02:23:23] ERROR: Failed to fetch gas price - Received tool input did not match expected schema
+Error: Received tool input did not match expected schema
+    at WardenTool.call (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/core/dist/tools/index.cjs:110:19)
+    at async getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:9:26)
+    at async startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:32:30)
+[2025-02-06 02:25:59] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'price')
+TypeError: Cannot read properties of undefined (reading 'price')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:11:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:32:30)
+[2025-02-06 02:26:11] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'price')
+TypeError: Cannot read properties of undefined (reading 'price')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:11:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:28:30)
+[2025-02-06 02:38:30] ERROR: Failed to fetch gas price - price is not defined
+ReferenceError: price is not defined
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:25:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:28:30)
+[2025-02-06 02:38:30] ERROR: Gas price prediction failed - predictGasTrend is not defined
+ReferenceError: predictGasTrend is not defined
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:37:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 02:38:52] ERROR: Gas price prediction failed - predictGasTrend is not defined
+ReferenceError: predictGasTrend is not defined
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:37:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 02:39:36] ERROR: Failed to analyze gas trends - getGasPriceHistory is not defined
+ReferenceError: getGasPriceHistory is not defined
+    at analyzeGasTrends (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/aiService.js:41:28)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:38:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 02:40:06] ERROR: Failed to analyze gas trends - Cannot read properties of undefined (reading 'invoke')
+TypeError: Cannot read properties of undefined (reading 'invoke')
+    at analyzeGasTrends (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/aiService.js:51:44)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:38:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 02:43:00] ERROR: Failed to analyze gas trends - HumanMessage is not defined
+ReferenceError: HumanMessage is not defined
+    at analyzeGasTrends (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/aiService.js:52:30)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:38:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 02:45:06] ERROR: Failed to analyze gas trends - config is not defined
+ReferenceError: config is not defined
+    at analyzeGasTrends (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/aiService.js:54:13)
+    at startWardenAgent (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/warden/agent.js:38:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 03:05:36] ERROR: Failed to analyze gas trends - 404 The model `gpt-4o` does not exist or you do not have access to it.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_NOT_FOUND/
+
+Error: 404 The model `gpt-4o` does not exist or you do not have access to it.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_NOT_FOUND/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:50:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-06 03:05:57] ERROR: Failed to analyze gas trends - 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+InsufficientQuotaError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at Object.defaultFailedAttemptHandler [as onFailedAttempt] (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/core/dist/utils/async_caller.js:33:21)
+    at RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:67:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 03:06:05] ERROR: Failed to analyze gas trends - 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+InsufficientQuotaError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at Object.defaultFailedAttemptHandler [as onFailedAttempt] (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/core/dist/utils/async_caller.js:33:21)
+    at RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:67:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-02-06 03:24:56] ERROR: Invalid AI response: 
+[2025-02-06 03:25:06] ERROR: Invalid AI response: 
+[2025-02-06 03:25:33] ERROR: Invalid AI response: 
+[2025-02-06 03:27:10] ERROR: Invalid AI response: I currently do not have access to the historical gas price data you mentioned. If you can provide the specific historical gas price values, I can help analyze that data and make a prediction for the next hour.
+[2025-02-06 03:54:34] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'find')
+TypeError: Cannot read properties of undefined (reading 'find')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:10:36)
+    at Timeout.updateGasPrices [as _onTimeout] (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/updateService.js:10:33)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-02-06 03:54:37] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'find')
+TypeError: Cannot read properties of undefined (reading 'find')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:10:36)
+    at Timeout.updateGasPrices [as _onTimeout] (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/updateService.js:10:33)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-02-06 03:54:40] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'find')
+TypeError: Cannot read properties of undefined (reading 'find')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:10:36)
+    at Timeout.updateGasPrices [as _onTimeout] (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/updateService.js:10:33)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-02-06 03:54:43] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'find')
+TypeError: Cannot read properties of undefined (reading 'find')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:10:36)
+    at Timeout.updateGasPrices [as _onTimeout] (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/updateService.js:10:33)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-02-06 03:54:46] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'find')
+TypeError: Cannot read properties of undefined (reading 'find')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:10:36)
+    at Timeout.updateGasPrices [as _onTimeout] (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/updateService.js:10:33)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-02-06 04:01:07] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'find')
+TypeError: Cannot read properties of undefined (reading 'find')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:10:36)
+    at Timeout.updateGasPrices [as _onTimeout] (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/updateService.js:10:33)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-02-06 04:01:17] ERROR: Failed to fetch gas price - Cannot read properties of undefined (reading 'find')
+TypeError: Cannot read properties of undefined (reading 'find')
+    at getGasPrice (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/gasPriceService.js:10:36)
+    at Timeout.updateGasPrices [as _onTimeout] (file:///home/jim/IdeaProjects/warden-gas-forecaster/src/services/updateService.js:10:33)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-02-09 17:41:20] ERROR: Invalid AI response: I'm unable to predict the gas price since the historical data has not been provided. Please provide the gas price history to proceed with the prediction.
+[2025-02-09 17:43:35] ERROR: Invalid AI response: I currently do not have access to the historical gas price data you've mentioned. Please provide the data or describe the trend, and I'll be able to help you with the prediction.
+[2025-02-09 17:44:47] ERROR: Invalid AI response: I'm unable to process the request as there is no actual data provided in your message. Please provide the historical gas price data in order for me to make a prediction.
+[2025-02-09 18:12:14] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 169517, Requested 35359. Please try again in 1.462s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 169517, Requested 35359. Please try again in 1.462s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:14:30] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 179292, Requested 38015. Please try again in 5.192s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 179292, Requested 38015. Please try again in 5.192s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:15:18] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 184192, Requested 39346. Please try again in 7.061s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 184192, Requested 39346. Please try again in 7.061s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:16:27] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 165067, Requested 40677. Please try again in 1.723s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 165067, Requested 40677. Please try again in 1.723s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:17:16] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 177044, Requested 41738. Please try again in 5.634s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 177044, Requested 41738. Please try again in 5.634s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:17:48] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 158034, Requested 42799. Please try again in 249ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 158034, Requested 42799. Please try again in 249ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:18:33] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 186441, Requested 43855. Please try again in 9.088s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 186441, Requested 43855. Please try again in 9.088s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:19:59] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 176137, Requested 45181. Please try again in 6.395s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 176137, Requested 45181. Please try again in 6.395s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:20:25] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 181537, Requested 45449. Please try again in 8.095s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 181537, Requested 45449. Please try again in 8.095s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:20:43] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 165971, Requested 45444. Please try again in 3.424s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 165971, Requested 45444. Please try again in 3.424s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:22:08] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 167917, Requested 47041. Please try again in 4.487s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 167917, Requested 47041. Please try again in 4.487s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:22:37] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 166841, Requested 47574. Please try again in 4.324s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 166841, Requested 47574. Please try again in 4.324s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:22:38] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 164504, Requested 47041. Please try again in 3.463s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 164504, Requested 47041. Please try again in 3.463s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:23:24] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 153775, Requested 47041. Please try again in 244ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 153775, Requested 47041. Please try again in 244ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:24:37] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 156999, Requested 48911. Please try again in 1.773s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 156999, Requested 48911. Please try again in 1.773s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:25:25] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 191731, Requested 49177. Please try again in 12.272s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 191731, Requested 49177. Please try again in 12.272s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:25:28] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 182031, Requested 49440. Please try again in 9.441s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 182031, Requested 49440. Please try again in 9.441s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:26:40] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 190554, Requested 49441. Please try again in 11.998s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 190554, Requested 49441. Please try again in 11.998s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:26:40] ERROR: Failed to analyze gas trends - Connection error.
+Error: Connection error.
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:316:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:26:51] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 155452, Requested 49442. Please try again in 1.468s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 155452, Requested 49442. Please try again in 1.468s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:27:05] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 157521, Requested 49708. Please try again in 2.168s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 157521, Requested 49708. Please try again in 2.168s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:27:37] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 153577, Requested 49710. Please try again in 986ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 153577, Requested 49710. Please try again in 986ms. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:28:04] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 166823, Requested 50502. Please try again in 5.197s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 166823, Requested 50502. Please try again in 5.197s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:28:37] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 157818, Requested 50770. Please try again in 2.576s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 157818, Requested 50770. Please try again in 2.576s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:29:22] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 161409, Requested 51832. Please try again in 3.972s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 161409, Requested 51832. Please try again in 3.972s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:29:38] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 162296, Requested 52096. Please try again in 4.317s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 162296, Requested 52096. Please try again in 4.317s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:29:38] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 161832, Requested 51830. Please try again in 4.098s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 161832, Requested 51830. Please try again in 4.098s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:30:03] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 128931 tokens (128539 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 128931 tokens (128539 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:30:18] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 129569 tokens (129177 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 129569 tokens (129177 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:30:19] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 183609, Requested 51033. Please try again in 10.392s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 183609, Requested 51033. Please try again in 10.392s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:30:33] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 128293 tokens (127901 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 128293 tokens (127901 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:30:39] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 169070, Requested 51828. Please try again in 6.269s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 169070, Requested 51828. Please try again in 6.269s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:30:48] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 131483 tokens (131091 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 131483 tokens (131091 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:31:05] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 132755 tokens (132363 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 132755 tokens (132363 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:31:37] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 134023 tokens (133631 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 134023 tokens (133631 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:31:53] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 129565 tokens (129173 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 129565 tokens (129173 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:00] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 168976, Requested 53674. Please try again in 6.795s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 168976, Requested 53674. Please try again in 6.795s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:03] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 160636, Requested 53937. Please try again in 4.371s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 160636, Requested 53937. Please try again in 4.371s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:13] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 130833 tokens (130441 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 130833 tokens (130441 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:13] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 179239, Requested 54462. Please try again in 10.11s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 179239, Requested 54462. Please try again in 10.11s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:24] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 131467 tokens (131075 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 131467 tokens (131075 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:43] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 132735 tokens (132343 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 132735 tokens (132343 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:47] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 174130, Requested 54983. Please try again in 8.733s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 174130, Requested 54983. Please try again in 8.733s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:32:59] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 133371 tokens (132979 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 133371 tokens (132979 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:33:16] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 134643 tokens (134251 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 134643 tokens (134251 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:33:19] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 179219, Requested 52886. Please try again in 9.631s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 179219, Requested 52886. Please try again in 9.631s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:33:23] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 166732, Requested 53147. Please try again in 5.963s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 166732, Requested 53147. Please try again in 5.963s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:33:32] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 135279 tokens (134887 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 135279 tokens (134887 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:33:41] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 160575, Requested 53668. Please try again in 4.272s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 160575, Requested 53668. Please try again in 4.272s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:33:49] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 136551 tokens (136159 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 136551 tokens (136159 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:34:07] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 137187 tokens (136795 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 137187 tokens (136795 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:34:23] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 139095 tokens (138703 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 139095 tokens (138703 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:34:29] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 173502, Requested 54451. Please try again in 8.385s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 173502, Requested 54451. Please try again in 8.385s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:34:41] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 138459 tokens (138067 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 138459 tokens (138067 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:34:47] ERROR: Failed to analyze gas trends - 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 167986, Requested 55234. Please try again in 6.966s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+Error: 429 Rate limit reached for gpt-4o-mini in organization org-G4AXvBbL1Gj8qWDxgV5RUCa5 on tokens per min (TPM): Limit 200000, Used 167986, Requested 55234. Please try again in 6.966s. Visit https://platform.openai.com/account/rate-limits to learn more.
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/MODEL_RATE_LIMIT/
+
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:59:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:34:56] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 140367 tokens (139975 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 140367 tokens (139975 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
+[2025-02-09 18:35:14] ERROR: Failed to analyze gas trends - 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 135915 tokens (135523 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+Error: 400 This model's maximum context length is 128000 tokens. However, your messages resulted in 135915 tokens (135523 in the messages, 392 in the functions). Please reduce the length of the messages or functions.
+    at APIError.generate (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/error.mjs:41:20)
+    at OpenAI.makeStatusError (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:286:25)
+    at OpenAI.makeRequest (file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/openai/core.mjs:330:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/jim/IdeaProjects/warden-gas-forecaster/node_modules/@langchain/openai/dist/chat_models.js:1476:29
+    at async RetryOperation._fn (/home/jim/IdeaProjects/warden-gas-forecaster/node_modules/p-retry/index.js:50:12)
