@@ -1,0 +1,15 @@
+{
+  "name": "warden-agent-kit-monorepo",
+  "private": true,
+  "workspaces": [
+    "agent-kit-core/typescript",
+    "langchain/warden/typescript",
+    "langchain/x/typescript"
+  ],
+  "packageManager": "npm@8.9.0",
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typedoc": "^0.27.2",
+    "typescript": "^5.4.5"
+  }
+}

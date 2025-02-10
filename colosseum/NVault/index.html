@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Vault Interface</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+        
+        .results {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Secret Vault Interface</h1>
+        
+        <div class="form-group">
+            <label for="userInfo">User Information:</label>
+            <input type="text" id="userInfo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="openaiKey">OpenAI API Key:</label>
+            <input type="password" id="openaiKey" required>
+        </div>
+
+        <div class="form-group">
+            <label for="walletKey">Wallet Private Key:</label>
+            <input type="password" id="walletKey" required>
+        </div>
+
+        <button onclick="handleEncrypt()">Encrypt and Store</button>
+        <button onclick="handleDecrypt()">Decrypt and Display</button>
+
+        <div class="results">
+            <h3>Encryption Results:</h3>
+            <pre id="encryptionResult"></pre>
+            
+            <h3>Decryption Results:</h3>
+            <pre id="decryptionResult"></pre>
+        </div>
+    </div>
+
+    <script>
+        async function handleEncrypt() {
+            const payload = {
+                user_info: document.getElementById('userInfo').value,
+                openai_api_key: document.getElementById('openaiKey').value,
+                wallet_private_key: document.getElementById('walletKey').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:3000/encrypt', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                document.getElementById('encryptionResult').textContent = JSON.stringify(result, null, 2);
+            } catch (error) {
+                console.error('Encryption error:', error);
+                document.getElementById('encryptionResult').textContent = 'Error during encryption!';
+            }
+        }
+
+        async function handleDecrypt() {
+            try {
+                const response = await fetch('http://localhost:3000/decrypt');
+                const data = await response.json();
+                document.getElementById('decryptionResult').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                console.error('Decryption error:', error);
+                document.getElementById('decryptionResult').textContent = 'Error during decryption!';
+            }
+        }
+    </script>
+</body>
+</html>

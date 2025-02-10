@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  background-color: #101014;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inter, sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+}
