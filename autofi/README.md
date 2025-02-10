@@ -54,7 +54,9 @@ Create a .env file in the root directory:
     PRIVATE_KEY
     RPC_URL
     KEY_ID
-
+4. Start the Agent
+   ```
+     npm run start:bot
 ## Usage
 
 ### Fetching Token Prices
@@ -91,4 +93,8 @@ Automation: Ensures autonomous execution of transactions without user interventi
 
 ✅ Multi-chain support (Polygon, Arbitrum)
 
+✅ Integrate with DEX.
+
 ✅ Implement a strategy marketplace for AI-driven trading signals
+
+
