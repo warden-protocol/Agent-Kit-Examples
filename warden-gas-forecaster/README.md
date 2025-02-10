@@ -14,7 +14,6 @@ cd warden-gas-forecaster
 ```
 ### 2️⃣ Set Up the Backend (requires nvm 18+)
 ``` bash
-cd backend  
 npm install  
 ```
 Create a `.env` file inside the `backend/` root directory with the following values:
@@ -24,7 +23,7 @@ PRIVATE_KEY=your_warden_private_key
 ```
 Start the backend server:
 ``` bash
-npm start  
+node src/index.js
 ```
 ✅ **You should see**:
 ``` bash
