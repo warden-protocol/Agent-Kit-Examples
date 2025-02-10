@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "allowUnusedLabels": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@elizaos/*": ["../elizaOnFlow/deps/eliza/packages/*/src"],
+      "@fixes-ai/*": ["../elizaOnFlow/packages/*/src"]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "../elizaOnFlow/deps/eliza/packages/*/src/**/*.ts",
+    "../elizaOnFlow/packages/*/src/**/*.ts"
+  ],
+  "exclude": ["node_modules"],
+  "references": [
+    { "path": "../elizaOnFlow/deps/eliza/packages/core" },
+    { "path": "../elizaOnFlow/deps/eliza/packages/client-direct" },
+    { "path": "../elizaOnFlow/packages/core" },
+    { "path": "../elizaOnFlow/packages/common" }
+  ]
+}

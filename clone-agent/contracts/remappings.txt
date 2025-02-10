@@ -1,0 +1,4 @@
+forge-std/=lib/forge-std/src/
+@openzeppelin/=lib/openzeppelin-contracts/
+ds-test/=lib/forge-std/lib/ds-test/src/
+@0xsequence/create3/=lib/create3/
