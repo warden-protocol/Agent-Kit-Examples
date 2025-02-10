@@ -43,46 +43,23 @@ export const wagmiAbi = [
 		"type": "event"
 	},
 	{
-		"inputs": [],
-		"name": "joinGame",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
+		"anonymous": false,
 		"inputs": [
 			{
-				"components": [
-					{
-						"internalType": "uint8",
-						"name": "fromX",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint8",
-						"name": "fromY",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint8",
-						"name": "toX",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint8",
-						"name": "toY",
-						"type": "uint8"
-					}
-				],
-				"internalType": "struct OnChessGame.Move",
-				"name": "move",
-				"type": "tuple"
+				"indexed": false,
+				"internalType": "address",
+				"name": "player",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum OnChessGame.Color",
+				"name": "color",
+				"type": "uint8"
 			}
 		],
-		"name": "makeMove",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
+		"name": "JoinedGame",
+		"type": "event"
 	},
 	{
 		"anonymous": false,
@@ -124,13 +101,6 @@ export const wagmiAbi = [
 		],
 		"name": "MoveMade",
 		"type": "event"
-	},
-	{
-		"inputs": [],
-		"name": "resignGame",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
 	},
 	{
 		"inputs": [],
@@ -216,6 +186,55 @@ export const wagmiAbi = [
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "joinGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint8",
+						"name": "fromX",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "fromY",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "toX",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "toY",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct OnChessGame.Move",
+				"name": "move",
+				"type": "tuple"
+			}
+		],
+		"name": "makeMove",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "resignGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{

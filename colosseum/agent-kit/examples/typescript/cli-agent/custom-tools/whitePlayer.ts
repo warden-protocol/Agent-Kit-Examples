@@ -3,7 +3,9 @@ import { wagmiAbi } from "./abi";
 import { z } from "zod";
 import { createPublicClient, http, Account, Chain, ChainDisconnectedError } from "viem";
 import { contract_address } from "./address";
+import * as dotenv from "dotenv";
 
+dotenv.config();
 export const getWhitePlayerInput = z.object({});
 
 /**
@@ -18,7 +20,7 @@ export async function getWhitePlayer(
     try {
         const publicClient = createPublicClient({
             chain: chains.sepolia,
-            transport: http()
+            transport: http(process.env.RPC_URL),
           });
           const data = await publicClient.readContract({
             address: contract_address,

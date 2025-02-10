@@ -3,7 +3,9 @@ import { wagmiAbi } from "./abi";
 import { z } from "zod";
 import { createPublicClient, http } from "viem";
 import { contract_address } from "./address";
+import * as dotenv from "dotenv";
 
+dotenv.config();
 // Zod schema for input validation (empty in this case)
 export const getGameOverInput = z.object({});
 
@@ -19,7 +21,7 @@ export async function getGameOver(
     try {
         const publicClient = createPublicClient({
             chain: chains.sepolia,
-            transport: http(),
+            transport: http(process.env.RPC_URL),
         });
 
         // Read the `gameOver` from the contract

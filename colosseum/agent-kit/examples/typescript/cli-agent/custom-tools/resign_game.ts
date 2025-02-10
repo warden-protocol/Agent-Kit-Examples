@@ -3,7 +3,9 @@ import { wagmiAbi } from "./abi";
 import { z } from "zod";
 import { createPublicClient, http, createWalletClient, Account, Chain, ChainDisconnectedError } from "viem";
 import { contract_address } from "./address";
+import * as dotenv from "dotenv";
 
+dotenv.config();
 
 // Add the custom tool
 
@@ -22,14 +24,14 @@ export const resignGame = async (
       // Create a public client (for reading data from the blockchain)
       const publicClient = createPublicClient({
         chain: chains.sepolia,
-        transport: http(),
+        transport: http(process.env.RPC_URL),
       });
   
       // Create a wallet client (for signing transactions)
       const walletClient = createWalletClient({
         account, // address of the key of the AI agent will be fetched automatically
         chain: chains.sepolia,
-        transport: http(),
+        transport: http(process.env.RPC_URL),
       });
   
       // Send the transaction to the blockchain using the wallet client

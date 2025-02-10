@@ -3,6 +3,9 @@ import { wagmiAbi } from "./abi";
 import { z } from "zod";
 import { createPublicClient, http } from "viem";
 import { contract_address } from "./address";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 // Zod schema for input validation (x and y coordinates for the board position)
 export const getBoardInput = z.object({
@@ -42,7 +45,7 @@ export async function getBoard(
     try {
         const publicClient = createPublicClient({
             chain: chains.sepolia,
-            transport: http(),
+            transport: http(process.env.RPC_URL),
         });
 
         const { x, y } = args; // Extract x and y coordinates from input
