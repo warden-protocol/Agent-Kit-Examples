@@ -1,0 +1,1 @@
+{"version":3,"file":"createCoinbaseWalletSDK.d.ts","sourceRoot":"","sources":["../src/createCoinbaseWalletSDK.ts"],"names":[],"mappings":"AAEA,OAAO,EACL,WAAW,EAEX,UAAU,EACV,iBAAiB,EAClB,MAAM,6BAA6B,CAAC;AAKrC,MAAM,MAAM,8BAA8B,GAAG,OAAO,CAAC,WAAW,CAAC,GAAG;IAClE,UAAU,CAAC,EAAE,UAAU,CAAC;CACzB,CAAC;AAMF;;;;GAIG;AACH,wBAAgB,uBAAuB,CAAC,MAAM,EAAE,8BAA8B;;EA8B7E"}
