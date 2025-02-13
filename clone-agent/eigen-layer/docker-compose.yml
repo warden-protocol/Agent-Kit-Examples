@@ -1,0 +1,127 @@
+version: "3.7"
+x-othentic-cli: &othentic-cli
+  env_file:
+    - .env
+  build:
+    context: .
+    dockerfile: ./Dockerfile
+services:
+  aggregator:
+    <<: *othentic-cli
+    command: ["node", "aggregator", "--json-rpc"]
+    environment:
+      - PRIVATE_KEY=${PRIVATE_KEY_AGGREGATOR:-${PRIVATE_KEY:-}}
+    ports:
+      - "8545:8545"
+      - "9876:9876"
+    networks:
+      p2p:
+        ipv4_address: 10.8.0.69
+  attester-1:
+    <<: *othentic-cli
+    command:
+      [
+        "node",
+        "attester",
+        "/ip4/10.8.0.69/tcp/9876/p2p/${OTHENTIC_BOOTSTRAP_ID}",
+        "--avs-webapi",
+        "http://10.8.0.42",
+      ]
+    environment:
+      - PRIVATE_KEY=${PRIVATE_KEY_ATTESTER1:-${PRIVATE_KEY_VALIDATOR1:-}}
+      - TASK_PERFORMER=0x0000000000000000000000000000000000000000
+    depends_on:
+      aggregator:
+        condition: service_started
+    networks:
+      p2p:
+        ipv4_address: 10.8.0.2
+  attester-2:
+    <<: *othentic-cli
+    command:
+      [
+        "node",
+        "attester",
+        "/ip4/10.8.0.69/tcp/9876/p2p/${OTHENTIC_BOOTSTRAP_ID}",
+        "--avs-webapi",
+        "http://10.8.0.42",
+      ]
+    environment:
+      - PRIVATE_KEY=${PRIVATE_KEY_ATTESTER2:-${PRIVATE_KEY_VALIDATOR2:-}}
+      - TASK_PERFORMER=0x0000000000000000000000000000000000000000
+    depends_on:
+      aggregator:
+        condition: service_started
+    networks:
+      p2p:
+        ipv4_address: 10.8.0.3
+  attester-3:
+    <<: *othentic-cli
+    command:
+      [
+        "node",
+        "attester",
+        "/ip4/10.8.0.69/tcp/9876/p2p/${OTHENTIC_BOOTSTRAP_ID}",
+        "--avs-webapi",
+        "http://10.8.0.42",
+      ]
+    environment:
+      - PRIVATE_KEY=${PRIVATE_KEY_ATTESTER3:-${PRIVATE_KEY_VALIDATOR3:-}}
+      - TASK_PERFORMER=0x0000000000000000000000000000000000000000
+    depends_on:
+      aggregator:
+        condition: service_started
+    networks:
+      p2p:
+        ipv4_address: 10.8.0.4
+  set-syncer:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: ./Set_Syncer/Dockerfile
+  syncer:
+    <<: *othentic-cli
+    command: ["node", "sync", "--sync-interval", "12h"]
+    environment:
+      - PRIVATE_KEY=${PRIVATE_KEY_SYNCER}
+      - ATTESTATION_CENTER_ADDRESS=${ATTESTATION_CENTER_ADDRESS}
+      - AVS_GOVERNANCE_ADDRESS=${AVS_GOVERNANCE_ADDRESS}
+    depends_on:
+      set-syncer:
+        condition: service_completed_successfully
+    networks:
+      p2p:
+        ipv4_address: 10.8.0.6
+  validation-service:
+    build:
+      context: ./Validation_Service
+      dockerfile: ./Dockerfile
+    env_file:
+      - .env
+    networks:
+      p2p:
+        ipv4_address: 10.8.0.42
+  execution-service:
+    build:
+      context: ./Execution_Service
+      dockerfile: ./Dockerfile
+    environment:
+      - OTHENTIC_CLIENT_RPC_ADDRESS=http://10.8.0.69:8545
+      - PRIVATE_KEY=${PRIVATE_KEY_PERFORMER:-${PRIVATE_KEY:-}}
+    env_file:
+      - .env
+    ports:
+      - "4003:4003"
+    networks:
+      default:
+      p2p:
+        ipv4_address: 10.8.0.101
+
+networks:
+  p2p:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.8.0.0/16
+          gateway: 10.8.0.1
