@@ -1,0 +1,45 @@
+{
+  "name": "@wardenprotocol/x-langchain",
+  "description": "X langchain extension for Warden Agent Kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wardenprotocol/agent-kit.git"
+  },
+  "version": "0.0.1",
+  "author": "Warden Labs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.33",
+    "@wardenprotocol/warden-agent-kit-core": "^0.0.22",
+    "viem": "^2.22.10",
+    "wagmi": "^2.14.8",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "agent-kit",
+    "langchain",
+    "warden"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wardenprotocol/agent-kit/issues"
+  },
+  "homepage": "https://github.com/wardenprotocol/agent-kit#readme"
+}

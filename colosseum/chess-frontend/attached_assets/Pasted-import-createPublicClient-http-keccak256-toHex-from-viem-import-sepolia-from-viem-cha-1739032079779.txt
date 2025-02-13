@@ -1,0 +1,109 @@
+import { createPublicClient, http, keccak256, toHex } from 'viem';
+import { sepolia } from 'viem/chains';
+import * as abiModule from './abi.json' assert { type: 'json' };
+const abi = abiModule.default;
+
+// Contract address
+const contractAddress = '0xbf178ba1bfce96d4de31c4df18e05f0ae0192be8';
+
+async function main() {
+    // Create a public client for Sepolia
+    const client = createPublicClient({
+        chain: sepolia,
+        transport: http('https://eth-sepolia.g.alchemy.com/v2/JfkCeSqLY74hGpZ28pXMa7sQg7aINFE1')
+    });
+
+    // Calculate event signature
+    const eventSignature = keccak256(
+        toHex('GameStarted(address,address)')
+    );
+    console.log('Expected event signature:', eventSignature);
+
+    // Get past events
+    const pastEvents = await client.getContractEvents({
+        address: contractAddress,
+        abi: abi,
+        eventName: 'GameStarted',
+        fromBlock: 'earliest'
+    });
+    console.log('Past GameStarted events:', pastEvents);
+
+    // Start watching events
+    try {
+        const cleanup = await watchChessEvents(client, eventSignature);
+        
+        // Keep the script running
+        process.on('SIGINT', () => {
+            console.log('Cleaning up...');
+            cleanup();
+            process.exit(0);
+        });
+    } catch (error) {
+        console.error('Error watching events:', error);
+    }
+}
+
+async function watchChessEvents(client, eventSignature) {
+    console.log('Starting to watch chess events...');
+
+    // Watch GameStarted events
+    const unWatchGameStarted = await client.watchContractEvent({
+        address: contractAddress,
+        abi: abi,
+        eventName: 'GameStarted',
+        onLogs: (logs) => {
+            logs.forEach(log => {
+                console.log('Raw log:', log);
+                const { whitePlayer, blackPlayer } = log.args;
+                console.log('Event signature:', log.topics[0]);
+                console.log('White player:', whitePlayer);
+                console.log('Black player:', blackPlayer);
+                console.log('Received event signature:', log.topics[0]);
+                if (log.topics[0] === eventSignature) {
+                    console.log('Signature matches!');
+                }
+            });
+        }
+    });
+
+    // Watch MoveMade events
+    const unWatchMoveMade = await client.watchContractEvent({
+        address: contractAddress,
+        abi: abi,
+        eventName: 'MoveMade',
+        onLogs: (logs) => {
+            logs.forEach(log => {
+                const { player, move } = log.args;
+                console.log('Move made!');
+                console.log(`Player: ${player}`);
+                console.log(`Move: from (${move.fromX},${move.fromY}) to (${move.toX},${move.toY})`);
+            });
+        }
+    });
+
+    // Watch GameWon events
+    const unWatchGameWon = await client.watchContractEvent({
+        address: contractAddress,
+        abi: abi,
+        eventName: 'GameWon',
+        onLogs: (logs) => {
+            logs.forEach(log => {
+                const { winner, winningColor } = log.args;
+                console.log('Game won!');
+                console.log(`Winner: ${winner}`);
+                console.log(`Winning Color: ${winningColor === 1 ? 'WHITE' : 'BLACK'}`);
+            });
+        }
+    });
+
+    // Return cleanup function to stop watching events
+    return () => {
+        unWatchGameStarted();
+        unWatchMoveMade();
+        unWatchGameWon();
+        console.log('Stopped watching events');
+    };
+}
+
+// Call the main function
+main().catch(console.error); 

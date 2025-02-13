@@ -1,0 +1,13 @@
+{
+  "name": "chess-events",
+  "version": "1.0.0",
+  "description": "Chess game event listener",
+  "main": "chess-events.js",
+  "type": "module",
+  "scripts": {
+    "start": "node chess-events.js"
+  },
+  "dependencies": {
+    "viem": "^2.22.23"
+  }
+} 
