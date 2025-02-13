@@ -1,0 +1,13 @@
+[submodule "apt-yield/lib/forge-std"]
+	path = apt-yield/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+
+[submodule "apt-yield/lib/agent-kit"]
+	path = apt-yield/lib/agent-kit
+	url = https://github.com/warden-protocol/agent-kit
+[submodule "apt-yield/lib/openzeppelin-contracts"]
+	path = apt-yield/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "apt-yield/lib/v2-periphery"]
+	path = apt-yield/lib/v2-periphery
+	url = https://github.com/Uniswap/v2-periphery
